@@ -1,28 +1,130 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>미사의 일기장</title>
+
+    <!-- 폰트 적용하기 -->
+    <link rel="stylesheet" href="https://noonnu.cc/font_page/694">
+    <style>
+        body {
+            font-family: 'Pretendard-Regular', sans-serif;
+        }
+        body{width: 600px;
+            margin: 0 auto;}
+
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* 공백 감싸기 적용 */
+        .test1 {
+            white-space: pre-line;
+            background-color: rgb(78, 147, 0);
+            font-weight: bold;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            width: 400px;
+            padding: 20px;
+        }
+
+        .box {
+            padding: 10px;
+            width: 200px;
+            background-color: lightgrey
+        }
+    </style>
+
+    <link rel="shortcut icon" href="./icon/img/favi/favicon.ico">
+    <!-- 꼭 들어가야 하는 거 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
+
 <body>
-    <h1>git</h1>
-    <pre>
-        1.git init
-        최초로 한 번 실행
-        2.
-        폴더에서 최초 한번 스크린샷 생성(git add .)
-        스크린샷을 버젼으로 생성
-        3. 스크린샷을 버전으로 생성
-        git commit -m "커밋메세지"
-        4. 원격저장소 생성(폴더별 최초 한번)
-        깃허브로 이동하여 new repository 클릭
-        5. 로컬저장소와 원격저장소 연결
-        pc별 최초 한 번 사용자 등록 이용
-        git remote add origin 원격저장소주소(폴더별 1회 실행)
-        6. 원격저장소로 코드를 전송
-        git push -u origin main(브랜치명)
-    </pre>
+    <img src="./src/20230725_073556.png" width="400" alt="">
+    <img src="./src/20230725_073233.png" width="400" alt="">
+
+    <p class="test1"> *초기화 태그: {margin: 0;padding: 0;}
+        작업하기 전에 항상 초기화 하고 사용할 것
+
+        파일 옮길 때 index.html+scr 파일 같이 옮기기
+
+        alt shift f 들여쓰기 꼭 해라
+
+        꼭 파일 저장은 소문자로. 대문자로 할 경우 오류 생길 수 있음
+
+        로컬과 서버는 폴더를 항상 똑같이 두고 사용할것.
+    </p>
+
+    <h1>0714 오늘 배운 수업(제목입니다)</h1>
+    <h2>차은우 불러오기</h2>
+
+    <!-- p>a 하위관계를 제대로 하기위해 막음태그 확인해야함. -->
+    <!-- href 속성을 확장하는 기능 -->
+    <!-- blank 새창 열기 기능 -->
+    <p><a href="./src/index.html" target="_blank">오늘부터 1일</a>
+    <p><a href="./path_test/path/web/img/index.html" target="_blank">0714 주말과제</a>
+    <p><a href="./03/note.html" target="_blank">0717 시맨틱마크업</a></p>
+    <p><a href="./03/note2.html" target="_blank">0717 h코드의 요소</a></p>
+    <p><a href="./03/note3.html" target="_blank">0717 Entity 코드로 문장 완성</a></p>
+    <p><a href="./0718 review/memo1.html" target="_blank">0718 텍스트 관련요소들</a></p>
+    <p><a href="./0718 review/memo2.html" target="_blank">0718 a태그</a></p>
+    <p><a href="./0718 review/memo3.html" target="_blank">0718 img 태그 복습</a></p>
+    <p><a href="./0718 review/memo4.html" target="_blank">0718 목록을 표시하는 태그 연습(order list)</a></p>
+    <p><a href="./0718 review/memo5.html" target="_blank">0718 원뎁스 투뎁스 구조</a></p>
+    <p><a href="./0718 review/memo6.html" target="_blank">0718 dd와 dt</a></p>
+    <p><a href="./05/04.html" target="_blank">0719 과제 이미지맵을 통한 하이퍼링크 달기</a></p>
+    <p><a href="./06/0720review.html" target="_blank">0720 input종류가 너무 많다</a></p>
+    <p><strong>0718: img 태그가 제대로 숙지안된 거같음 / 매킨토시에서 뎁스 코드 열고 닫는 단축키 안먹힌다??</strong></p>
+    <p><a href="./c01/ctest.html">0721 태그선택자 연습</a></p>
+    <p><a href="./06/0722 homework.html" target="_blank">0722 코딩과제1</a></p>
+    <p><a href="./06/0722 homework2.html" target="_blank">0722 코딩과제2</a></p>
+    <p><a href="./06/0724homework_3.html" target="_blank">0724 과제_이력서</a></p>
+    <p><a href="./06/0724homework_4.html" target="_blank">0724 코딩과제1</a></p>
+    <p><a href="./06/0724homework2.html" target="_blank">0724 코딩과제2</a></p>
+    <p><a href="./05/03_0727homework.html" target="_blank">0727 과제</a></p>
+    <p><a href="./Study/study2.html" target="_blank">형성학습 다시 해보기</a></p>
+    <p><a href="./Study/0730_review.html" target="_blank">0730 배운 거 복습1</a></p>
+    <p><a href="./Study/0730_review2.html" target="_blank">0730 배운 거 복습2</a></p>
+    <p><a href="./Study/0730_review3.html" target="_blank">0730 배운 거 복습3</a></p>
+    <p><a href="./Study/0730_review4.html" target="_blank">0730 배운 거 복습4</a></p>
+    <p><a href="./Study/0731homework.html" target="_blank">0731 과제1</a></p>
+    <p><a href="./Study/0731homework2.html" target="_blank">0731 과제2</a></p>
+    <p><a href="./Study/0802_homework.html" target="_blank">0802 과제1</a></p>
+    <p><a href="./Study/0802_homework2.html" target="_blank">0802 과제2</a></p>
+    <p><a href="./Study/0803_homework.html" target="_blank">0803 과제</a></p>
+    <p><a href="./Study/0804_homework.html" target="_blank">0804 과제</a></p>
+    <div class="box">
+        <h2>동영상 강의</h2>
+        <p><a href="./holiday_chapter2/html_5_structure.html" target="_blank">주말공부1</a>/
+        <p>
+        <p><a href="./holiday_chapter2/html_5_structure2.html" target="_blank">주말공부2</a></p>
+        <p><a href="./holiday_chapter2/html_5_structure3.html" target="_blank">주말공부3</a></p>
+        <p><a href="./holiday_chapter2/html_5_structure4.html" target="_blank">주말공부4(얘는 학원 영상 아님)</a></p>
+    </div>
+
 </body>
+
 </html>
