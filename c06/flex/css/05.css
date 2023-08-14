@@ -1,0 +1,16 @@
+.container {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    display: flex;
+    flex-flow: row rwap;
+}
+
+.box{width: 80px;}
+#opt1{}
+#opt2{}
+#opt3{}
+#opt4{}
+#opt5{}
+#opt6{}

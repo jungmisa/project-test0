@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float:left(예제 찾아서 해보기)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1200px;
+            background-color: grey;
+            margin: auto;
+        }
+
+        /* 부모요소 컨테이너에 갇혀있어서 너비 주지않아도 됨 */
+        header {
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            background-color: blue;
+        }
+
+        .inner div {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            border: 1px solid yellowgreen;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        footer {
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 100px;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>header</header>
+        <div class="inner">
+            <div>section1</div>
+            <div>section2</div>
+            <div>section3</div>
+        </div>
+        <footer>footer</footer>
+</body>
+
+</html>

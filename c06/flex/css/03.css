@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    width: 900px;
+    flex-flow: column;
+}
+
+.opt2{justify-content: center;}
+.opt3{justify-content: flex-end;}
+/* 시작점과 끝점 배치 후 중간박스는 균등배치 */
+.opt4{justify-content: space-between;}
+/* 주축 중앙 */
+.opt5{justify-content: space-around;}
+/* 전부 균등배치(겹치는 부분 병합) */
+.opt6{justify-content: space-evenly;}

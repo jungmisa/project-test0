@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .cf:after {
+            content:'';
+            clear: both;
+            display: block;
+        }
+
+        .h_100 {
+            height: 100px
+        }
+
+        .bg_red {
+            background: red;
+        }
+
+        .bg_gray {
+            background: gray;
+        }
+
+        .bg_green {
+            background: green;
+        }
+
+        header,
+        main,
+        footer {
+            width: 500px;
+        }
+
+        nav,
+        aside {
+            width: 100px;
+        }
+
+        section {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- header+main+footer -->
+        <!-- 큰영역부터 잡고 해야함 -->
+        <header class="h_100 bg_gray"></header>
+        <main class="cf">
+            <!-- nav+section+aside -->
+            <nav class="f1 h_100 bg_red"></nav>
+            <section class="fl h_100 bg_green"></section>
+            <aside class="fl h_100 bg_red"></aside>
+        </main>
+        <footer class="h_100 bg_gray"></footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    height: 150px;
+    width: 100%;
+}
+
+#opt1 {
+    align-items: flex-start;
+    /* 교차축 시작점 배치 */
+    align-items: stretch;
+}
+
+#opt2 {
+    /* 교차축 끝점 배치 */
+    align-items: flex-end;
+}
+
+#opt3 {align-items:center;}
+#opt4 {align-items: baseline ;}
+#opt5 {align-items: stretch ;}
+#opt6 {align-items: ;}

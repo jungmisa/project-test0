@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0805 html5문서(온라인 강의)</title>
+    <style>
+        body{width: 400px;}
+        #div1 {
+            border: red solid;
+        }
+
+        #div2 {
+            border: blue solid;
+        }
+
+        .span1 {
+            border: green solid;
+        }
+
+        .span2 {
+            border: orange solid;
+        }
+    </style>
+</head>
+
+<body>
+    <p>공간분할 태그의 종류</p>
+    <p>div:블록 형식의 공간분할</p>
+    <p>span:인라인 형식의 공간분할</p>
+    <p>
+        <span>span: inline</span>
+        <span>span: inline</span>
+        <span>span: inline</span>
+    </p>
+    hr
+    <p>
+    <div>div:block</div>
+    <div>div:block</div>
+    <div>div:block</div>
+    </p>
+
+    <div id="div1">
+        <p>div 1 space</p>
+        <span class="span1">span 1 space</span>
+        <span class="span2">span 2 space</span>
+        <p><span class="span1">span 1 space</span></p>
+        <p><span class="span2">span 2 space</span></p>
+    </div>
+
+    <div id="div2">
+        <p>div 2 space</p>
+    </div>
+
+    <h2>시멘틱태그의 구조</h2>
+    <p>시맨틱:의미론적인, 태그에 의미를 부여하다.</p>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* 부모한테 선언해야함 */
+/* 부모는 컨테이너, 자식은 아이템박스 */
+/* 디스플레이는 상속이 되는 속성이 아님. p는 상관없음 */
+/* id=opt1은 클래스 컨테이너의 다른 이름. */
+/* 구조 짤 때 감싸야함 */
+.container{display: flex;}
+#opt1 .box:nth-child(1){display: flex;}
+/* 방향 */
+#opt1{flex-direction: row;}
+/* 우에서 좌 */
+#opt2{flex-direction: row-reverse;}
+/* 상에서 하 */
+#opt3{flex-direction: column;}
+/* 하-상 */
+#opt4{flex-direction: column-reverse;}

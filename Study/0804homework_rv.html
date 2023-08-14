@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            margin: 0 auto;/*가운데 정렬*/
+            width: 700px;
+            height: 700px;
+            background-image: url('./img/circle.png');
+            background-repeat: no-repeat;/*이미지 반복 금지*/
+            background-size: 500px;
+            /*상자 사이즈가 아닌 이미지의 사이즈, 지정 안할시 상자사이즈에 자동으로 맞춰짐*/
+            position: absolute;
+            left: 400px;
+            /*
+            position: absolute;
+            left: 50%;
+            transform: translateX( -50% );
+            화면크기에서 가운데 정렬 공식
+            */
+            /*position: absolute 화면의 좌표상 고정
+              position: fixed 모니터 기준 고정*/
+        }
+        .textBox{
+            width:150px;
+            border-radius:10px;/*상자의 모서리 라운딩*/
+            padding: 20px;
+            background-color: #cccccc;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .bg_gray{
+            background: #cccccc url('./img/bg_gray.png');
+            background-repeat: no-repeat;/*이미지 반복 금지*/
+            background-size:800px 1000px;
+            /*상자 사이즈가 아닌 이미지의 사이즈, 지정 안할시 상자사이즈에 자동으로 맞춰짐*/    
+            width:1500px;
+            height:1000px;
+        }
+        .people{
+            text-align: center;
+            padding-top: 600px;
+            font-size: 60px;
+            color: #ffffff;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="textBox">Freedom is not worth having
+        if it does not include the freedom to make mistakes.</div>
+    </div>
+    <div class="bg_gray">
+        <div class="people">- Mahatma Gandhi -</div>
+    </div>
+</body>
+
+</html>

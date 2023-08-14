@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .who {
+            height: 150px;
+            margin-bottom: 10px;
+            background: #67758e url(./img/bg_size.png) no-repeat;
+        }
+
+        /* background+background image+background repeat의 축약표현 */
+        /* width, height */
+        .who1 {
+            background-size: 100px 200px;
+            background-position: center;
+        }
+
+        /* 속성 1개 작성시 width:50px height:auto 동시 적용*/
+        .who2 {
+            background-size: 50px;
+        }
+
+        .who3 {
+            background-size: 80% 150%;
+        }
+
+        /* cover: 요소의 너비에 배경을 맞추는 거 */
+        /* 테이블 식탁보를 생각해본다... */
+        /* 일반적으로 웹사이트는 cover를 많이 */
+        .who4 {
+            background-size: cover;
+        }
+
+        /* contain: 요소의 높이에 배경을 맞춤 */
+        /* container 상자를 높이 쌓는 걸 생각해본다... */
+        .who5 {
+            height: 500px;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background-size</h1>
+    <!-- 배경 이미지의 크기 -->
+    <div class="who who1"></div>
+    <div class="who who2"></div>
+    <div class="who who3"></div>
+    <div class="who who4"></div>
+    <div class="who who5"></div>
+</body>
+
+</html>

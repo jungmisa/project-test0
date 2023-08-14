@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading(적용순서별 우선순위)</title>
+    <link rel="stylesheet" href="./011.css">
+    <!-- 스타일 아래로 링크를 두면 css가 먼저 우선순위가 됨. -->
+    <!-- hmtl 문서는 한 줄 읽고 실행 아래로 아래로 실행. -->
+    <style>
+        body{background-color: yellow;}
+    </style>
+    <link rel="stylesheet" href="./011.css">
+</head>
+
+<body id="bgPage1" class="bgPage2">
+    <!-- 바디에 스타일 쓰면 우선권을 가지지만 문법상 맞지않음.쓰지말것 -->
+    <!-- 바디는 자식으로 h1과 div를 데리고있음 -->
+    <!-- p class 하위에 span 태그가 있음. -->
+    <!-- 바디의 클래스명과 p태그의 클래스명이 같음. -->
+    <h1>적용순서별 순위 알아보기</h1>
+    <hr />
+    <div>
+        <h2>굴 이야기</h2>
+        <p class="bgPage2">
+            일명 <span class="blueText">석화</span>라고도 하는데 멀리서 보면 따낸 굴조개 껍질이 바위면에 하얗게 붙어있어서 마치 <span
+                class="blueText">꽃무더기</span>를 연상하게 한다. 굴은 <span class="blueText">3대 영양소</span>는 물론 비타민, 미네랄에 이르기까지 풍부한
+            영양분을 함유하고 있어서 완전식품인 우유와 별로 다를 바가 없다.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 예제 찾아서 해보기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 600px;
+            height: 200px;
+            background-color: yellowgreen;
+            margin: auto;
+            margin-top: 40px;
+            padding: 10px;
+        }
+
+        .picture {
+            width: 250px;
+            height: 200px;
+            background: lightblue url(./img/fubao.jpg) no-repeat;
+            background-size: 300px;
+            float: left;
+        }
+
+
+        .text {
+            width: 350px;
+            height: 200px;
+            background-color: rgb(235, 235, 235);
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            font-weight: bold;
+            float: left;
+        }
+
+        .wrap2 {
+            width: 600px;
+            height: 200px;
+            background-color: rgba(255, 175, 156, 0.874);
+            margin: auto;
+            margin-top: 40px;
+            border: 15px solid rgba(255, 175, 156, 0.874);
+            border-radius: 10px;
+        }
+
+        .picture2 {
+            width: 250px;
+            height: 200px;
+            background: lightblue url(./img/peach.jpg) no-repeat;
+            background-size: 300px;
+            float: left;
+        }
+
+        .tag {
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 5px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .text2 {
+            width: 350px;
+            height: 200px;
+            background: linear-gradient(to bottom, rgb(254, 254, 76), rgb(255, 196, 206), pink);
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            font-weight: bold;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="picture">사진</div>
+            <div class="text">푸바오는 천사에요</div>
+        </div>
+    </div>
+
+    <div class="wrap2">
+        <div class="main2">
+            <div class="picture2">
+                <div class="tag">사진</div>
+            </div>
+            <div class="text2">복숭아는 맛있다</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/* 부모한테 선언해야함 */
+/* 부모는 컨테이너, 자식은 아이템박스 */
+/* 디스플레이는 상속이 되는 속성이 아님. p는 상관없음 */
+/* id=opt1은 클래스 컨테이너의 다른 이름. */
+/* 구조 짤 때 감싸야함 */
+/* 반응형을 할 때는 웹페이지 축소 하면 안됨 */
+.container {
+    display: flex;
+}
+
+#opt1 {
+    flex-wrap: nowrap;
+}
+
+#opt2 {
+    flex-wrap: wrap;
+}
+
+#opt3 {
+    flex-wrap: wrap-reverse;
+}
+
+/* direstion과 wrap을 한꺼번에 할 수 있음. */
+#opt4 {
+    flex-flow: row wrap;
+    flex-flow: column wrap;
+}

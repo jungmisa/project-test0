@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>회원 가입을 환영합니다</h1>
+    <!-- h1+form+fiedset+legend -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>아이디<input type="text" name="userid"></li>
+                <li>이메일<input type="eamil" name="useremail"></li>
+                <li>비밀번호<input type="password" name="userpassword"></li>
+                <li>비밀번호 확인<input type="password" name="userrepassword"></li>
+            </ul>
+        </fieldset>
+        <label><input type="radio" name="eventconform" value="yes" checked>메일수신</label>
+            <label><input type="radio" name="eventconform" value="no">메일수신안함</label>
+            <input type="submit" value="가입하기">
+            <input type="reset" value="취소하기">
+        </fieldset>
+    </form>
+</body>
+
+</html>

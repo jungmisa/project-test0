@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .circle {
+            width: 700px;
+            height: 700px;
+            /* 백그라운드 이미지를 불러내기 위한 너비와 높이. 임시 */
+            background-image: url(./img/circle.png);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            /* 상자의 사이즈가 아닌 백그라운드의 사이즈 지정. 지정 안하면 배경의 너비에 이미지 사이즈가 맞춰짐 */
+            margin: 0 auto;
+            /* 가운데 정렬 */
+            position: absolute;
+            left: 500px;
+        }
+
+        .textBox {
+            width: 150px;
+            text-align: center;
+            background-color: #cccccc;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 200px;
+        }
+
+        .grey {
+            width: 1500px;
+            height: 1000px;
+            background: #cccccc url(./img/bg_gray.png);
+            background-repeat: no-repeat;
+            background-size: 1000px 1000px;
+        }
+
+        .people {
+            text-align: center;
+            padding-top: 600px;
+            font-size: 80px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <p class="textBox">
+            Freedom is not worth having
+            if it does not include the freedom to make mistakes.
+        </p>
+    </div>
+    <div class="grey">
+        <p class="people">- Mahatma Gandhi -
+        <p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="09-1.css"> -->
+    <link rel="stylesheet" href="09-2.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section{background-color: rgb(255, 227, 231);}
+        .inner_wrap{width: 1180px;margin: auto;height: 300px;
+        background-color: green; position: relative;}
+        h1{position:absolute; top: 0; left: 10px; background-color: pink;}
+        h2{position:absolute; top: 0; right: 10px; background-color: pink;}      
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <section>
+            <!-- inner width, margin:auto 준다. position relative 준다.
+            자식한테 absolute를 주면 좌표로 조정할 수 있다. -->
+            <div class="inner_wrap">
+                <h1>section1</h1>
+                <h2>1180px</h2>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

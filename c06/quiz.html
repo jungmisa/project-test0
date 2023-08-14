@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 리셋 정의 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cf:after {
+            /* css를 사용하여 html에 가짜 콘텐츠 추가 */
+            content: '';
+            /* 콘텐츠는 인라인으로 추가되기 때문에 블럭으로 또는 디스플레이 속성을 바꿈 */
+            display: block;
+            /* float을 해제 */
+            clear: both;
+        }
+
+        .container {
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            background-color: #ccc;
+            padding: 255px 146px;
+            box-sizing: border-box;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        /* 개별 속성 정의 */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        /* 2n:두 번째마다 */
+        .box:nth-child(2n):not(:last-child) {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container.cf>.box.fl+box.fr -->
+    <div class="container cf">
+        <div class="box fl"></div>
+        <div class="box fl"></div>
+        <div class="box fr"> </div>
+    </div>
+
+</body>
+
+</html>

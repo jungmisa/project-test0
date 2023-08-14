@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 100px;
+            height: 100px;
+            background: brown;
+            /* 애니메이션의 이름 */
+            animation-name: play;
+            /* 애니메이션의 지속시간 */
+            animation-duration: 4s;
+            /* 애니메이션 종료시 스타일 지정 */
+            animation-fill-mode: forwards;
+            /* 실행횟수 */
+            animation-iteration-count: 3;
+            /* 방향 */
+            animation-direction: alternate;
+            /* 상태 */
+            animation-play-state: running;
+        }
+
+        @keyframes play {
+            0% {
+                background-color: lightseagreen;
+                transform: translate(80px, 200px) rotate(45deg);
+            }
+
+            100% {
+                background-color: pink;
+                transform: translate(80px, 0px) rotate(-50deg);
+
+            }
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: red;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ball 5s ease-in 1s infinite alternate;
+        }
+        @keyframes ball{
+            0%{transform: translate(200px, 200px);}
+            100%{transform: translate(0px, 0px);}
+        }
+        button:hover+p{animation-play-state: paused;}
+    </style>
+</head>
+
+<body>
+    <button>stop</button>
+    <p>
+        Animation..
+    </p>
+    <div class="ball"></div>
+</body>
+
+</html>

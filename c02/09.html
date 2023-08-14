@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text decoration과 transform(밑줄속성과 대소문자)</title>
+    <style>
+        body {
+            color: #ff0000;
+        }
+
+        /* a태그는 따로 선택해서 색상을 바꿔야함. 웹에서 특별하게 다루기 때문에 */
+        text- a {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            text-decoration: overline;
+            /* text-decoration: line-through;(취소줄) */
+            /* text-tranform:capitalize:앞글자만 대문자로 바뀜 */
+            text-transform: uppercase;
+            text-transform: lowercase; text-transform: capitalize;}
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">현재상영작</a></li>
+        <li><a href="#">상영예정작</a></li>
+    </ul>
+    <p>Happy birth day!</p>
+</body>
+
+</html>

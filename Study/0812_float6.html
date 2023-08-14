@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피그마 float 테스트 다시 해보기3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 500px;
+            background-color: grey;
+            margin: auto;
+        }
+
+        .header {
+            width: 500px;
+            height: 60px;
+            background-color: red;
+        }
+
+        .header h1 {
+            float: left
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box li {
+            width: 40px;
+            background-color: yellow;
+        }
+
+        .box li {
+            float: right;
+        }
+
+        .main .box2 {
+            float: left;
+        }
+
+        .box2 {
+            width: 60px;
+            background-color: aquamarine;
+        }
+
+        .box2 {
+            width: 100px;
+            float: left;
+        }
+
+        .box2 li {
+            float: left;
+        }
+
+        section {
+            width: 300px;
+            background-color: lightskyblue;
+            float: left;
+        }
+
+        aside {
+            width: 100px;
+            background-color: yellowgreen;
+            float: right;
+        }
+
+        footer {
+            width: 500px;background-color: aqua;
+        }
+
+        .cf::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>logo</h1>
+            <ul class="box">
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+                <li><a href="">test</a></li>
+            </ul>
+        </div>
+        <div class="cf main">
+            <ul class="box2">
+                <li><a href="">m1</a></li>
+                <li><a href="">m1</a></li>
+                <li><a href="">m1</a></li>
+            </ul>
+            <section>sestion</section>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

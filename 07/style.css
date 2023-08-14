@@ -1,0 +1,87 @@
+/* ctrl+tab(문서간의 이동) */
+/* charset css의 문자 세트 지정(html같은) */
+@charset "UTF-8";
+
+/* 웹브라우저의 기본 여백 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 0은 단위를 안써도 됨. 값이 없기 때문에 */
+
+/* 자식선택자(하위선택자) */
+body>* {
+    width: 900px;
+    padding: 20px;
+    background-color: greenyellow;
+    text-align: center;
+    margin: auto;
+}
+
+/* 요소를 감싼 부모를 찾아야함. */
+header {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* justify-content: space-between; 가로정렬 */
+/* align-items: flex-end; 수직정렬 */
+h1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(186, 112, 255);
+    line-height: 200px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 600px;
+    justify-content: center;
+}
+
+li {
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: rgb(220, 255, 179);
+    width: 300px;
+    height: 400px;
+    line-height: 400px;
+}
+
+/* 단위 안쓰면 태그 몇 배로 뿔려짐... */
+
+section+div {
+    display: flex;
+    flex-direction: column;
+}
+
+section+div>* {
+    height: 190px;
+    width: 200px;
+    background-color: rgb(255, 123, 0);
+}
+
+footer>* {
+    background-color: rgb(220, 94, 255);
+    width: 600px;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+/* padding: 네 방향의 값을 똑같이 줄 때는 각각 다르게 안써도 됨 */
+/* 네 개의 값이 다를 때는 각각 다르게 줘야함(left등) */
+/* 방향이 위 아래가 같이 공존할 수 없음 */

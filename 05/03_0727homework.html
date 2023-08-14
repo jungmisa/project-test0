@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0728 앵커 CSS속성 과제</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        h1 {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        a[title^="모델"] {
+            color: white;
+            background-color: black;
+        }
+
+        .model {
+            background-color: red;
+            color: white;
+        }
+
+        a[title*="위로 이동하기"] {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>네임앵커 이용하기</h1>
+    <hr>
+    <ul id="top">
+        <li><a href="#Model1" title="모델1">Model1</a></li>
+        <li><a href="#Model2" title="모델2">Model2</a></li>
+        <li><a href="#Model3" title="모델3">Model3</a></li>
+    </ul>
+    <hr>
+    <p class="model">오피스룩</p>
+    <img src="./images/images/01.png" width="800" alt="오피스룩">
+    <hr>
+    <p class="model">페미닌룩</p>
+    <img src="./images/images/02.png" width="800" alt="페미닌룩">
+    <hr>
+    <p class="model">씨티룩</p>
+    <img src="./images/images/03.png" width="800" alt="씨티룩">
+    <hr>
+    <p><a href="#top" title="위로 이동하기">위로 이동하기</a></p>
+</body>
+
+</html>

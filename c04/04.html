@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0803 background-position</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        body{background-image: url(./img/bg_linepttn.png); background-repeat: repeat-y;}
+        .pc1,
+        .pc2 {
+            background-image: url(./img/bg_linepttn.png);
+            background-position: 0 100%;
+            background-repeat: repeat-x;
+            padding: 20px;
+        }
+
+        .pc1 li {
+            background-image: url(./img/bg_ar.png);
+            background-repeat: no-repeat;
+            padding: 20px;
+            background-position-y: 50%;
+            background-position-x: 0%;
+        }
+
+        /* background-repeat-x: no-repeat; background-repeat-y: no-repeat; 축약 */
+        .pc2 li {
+            background-image: url(./img/bg_bullet.png);
+            background-repeat: no-repeat;
+            padding: 20px;
+            text-indent: 20px;
+            /* left center(같은뜻) */
+            background-position: 0 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background-position</h1>
+    <h3>최근 게시물</h3>
+    <ul class="pc1">
+        <li>PC 사양 알아보기</li>
+        <li>미니타워와 미들타워의 차이</li>
+        <li>어깨의 통증과 발목의 통증</li>
+    </ul>
+    <ul class="pc2">
+        <li>PC 사양 알아보기</li>
+        <li>미니타워와 미들타워의 차이</li>
+        <li>어깨의 통증과 발목의 통증</li>
+    </ul>
+</body>
+
+</html>

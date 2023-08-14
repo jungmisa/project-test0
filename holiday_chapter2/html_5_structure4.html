@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0805 html5문서(온라인 강의)_폼태그</title>
+    </style>
+</head>
+
+<body>
+    <!-- 액션: 백앤드 개발자들이 사용하는 거. 폼 양식의 데이터가 보내질 페이지 주소 -->
+    <form action="#"></form>
+    <!-- fieldset: 폼의 구역을 나누고 이름을 작성하는 태그. 자손으로 반드시 legend가 있어야함. -->
+    <fieldset>
+        <legend>필수입력항목</legend>
+        <label for="">아이디입력</label>
+        <input type="text" id="loginid">
+    </fieldset>
+    <fieldset>
+        <legend>선택항목</legend>
+    </fieldset>
+
+    <!-- label: input, textarea, select에 전부 붙여줘야하는 태그 -->
+    <form action="#">
+        <fieldset>
+            <legend>2구역:select 태그</legend>
+            <label for="lunch">점심메뉴 선택</label>
+            <select id="lunch">
+                <option>김치찌개</option>
+                <option>된장찌개</option>
+                <option>순두부찌개</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>3구역:textarea(여려줄 입력하는 상자)</legend>
+            <label for="">내용:</label>
+            <textarea id="substance" cols="30" rows="10"></textarea>
+        </fieldset>
+    </form>
+
+    <!-- input태그: 사용자가 값을 입력하는 태그 -->
+    <!-- input type 종류가 많아요... -->
+
+    <h2>input타입의 텍스트 상자 text / password</h2>
+    <form action="">
+        <fieldset>
+            <legend>로그인 홈</legend>
+            <input type="text" placeholder="아이디입력" maxlength="12">
+            <!-- 이게 뭘 쓰는 칸인지 알기 위해 있는 예시 텍스트 -->
+            <!-- maxlength="12":12 글자 이상은 안돼 -->
+            <br>
+            <input type="password" placeholder="비밀번호" maxlength="12">
+            <!-- 패스워드로 치면 암호화되서 안보임 -->
+        </fieldset>
+        <fieldset>
+            <legend>수량선택</legend>
+            <button>-</button>
+            <input type="text" value="1">
+            <!-- value: 기본값을 지정해줌 -->
+            <!-- 예시텍스트가 아니라 수량값이 사라지지않음. -->
+            <button>+</button>
+        </fieldset>
+        <fieldset>
+            <legend>주소입력</legend>
+            <input type="text" value="서울시 강남구 역삼동" disabled>
+            <!-- disabled: 설정값이 변하지 못하게 함 -->
+            <input type="text" placeholder="나머지 주소">
+        </fieldset>
+    </form>
+
+    <h2>input type 태그의 체크박스</h2>
+    <!-- 두가지 종류가 있음. 체크박스는 여러값을 체크하고싶을 때 사용함. -->
+    <fieldset>
+        <legend>취미 체크</legend>
+        <input type="checkbox" id="hobby1">
+        <label for="hobby1">게임</label>
+        <br>
+        <input type="checkbox" id="hobby2" checked>
+        <!-- checked: 미리 체크해놓는 것 -->
+        <label for="hobby2">독서</label>
+        <br>
+        <input type="checkbox" id="hobby3">
+        <label for="hobby3">운동</label>
+        <!-- radio: 체크값 중 한 개만 체크해야할 때 사용합니다. -->
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>성별</legend>
+        <input type="radio" id="male" name="gender">
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="gender" checked>
+        <label for="female">남자</label>
+    </fieldset>
+</body>
+<h2>input 버튼들의 유형</h2>
+<form action="#">
+    <!-- button: 일반적인 버튼을 의미 -->
+    <input type="button" value="우편번호 찾기">
+    <br>
+    <!-- input type="image: 버튼을 이미지로 가져옴 -->
+    <!-- 안되는 기능이 있을 때 사용했지만 지금은 잘안씀 -->
+    <input type="image" src="./img/blue_button.png" width="100" alt="파란버튼">
+    <br>
+    <!-- 폼의 데이터를 서버로 전송하는 버튼 -->
+    <input type="submit" value="회원가입">
+</form>
+<!-- input type은 label태그와 꼭 같이 써야하지만 button타입은 label 태그를 꼭 쓰지않아도 됨. -->
+</html>

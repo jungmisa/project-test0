@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 하위선택자 */
+        body h1 {
+            color: red;
+        }
+
+        ul li {
+            color: green;
+        }
+
+        ul>li>ul>li {
+            background-color: blue;
+        }
+
+        /* 자식선택자 */
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetuer adipiscing
+        elit</h1>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetuer.</li>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetuer.</li>
+            <li>Aenean commodo ligula eget dolor.</li>
+            <li>Aenean massa cum sociis natoque penatibus.</li>
+        </ul>
+        <li>Aenean commodo ligula eget dolor.</li>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetuer.</li>
+            <li>Aenean commodo ligula eget dolor.</li>
+            <li>Aenean massa cum sociis natoque penatibus.</li>
+        </ul>
+        <li>Aenean massa cum sociis natoque penatibus.</li>
+    </ul>
+</body>
+
+</html>

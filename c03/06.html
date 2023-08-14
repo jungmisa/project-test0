@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text overflow(말줄임표)</title>
+    <style>
+        /* a태그는 인라인 태그 요소지만 블럭태그를 감쌀 수 있는 유일한 태그임 */
+        /* 일기장에 꼭 적어놓기 초기화 태그 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 선택자는 .notice를 선택해도 괜찮음 */
+        ul li {
+            list-style: none
+        }
+
+        /* h3는 변경할 수 없음 */
+        /* display: 화면에서 보이는 너비를 설정할 수 있음. */
+        /* overflow: 넘치는 컨텐츠를 어떻게 해야할 지에 대한 속성 */
+        /* text-overflow: llipsis(말줄임표): 너비, 줄바꿈 안됨, 넘치는 거 막아야함 */
+        /* 예시: width: 200px; overflow: hidden; text-overflow: ellipsis; */
+        /* 인라인 요소에는 넣을 수 없음. 너비를 가질 수 없기 때문에. */
+
+        a {
+            text-decoration: none;
+            color: darkblue;
+            display: block;
+            margin: 10px;
+        }
+
+        /* white-space는 1줄밖에 적용안됨 */
+        /* 멀티라인 적용 전 */
+        .notice a .h3 {
+            width: 200px;
+            border: 1px solid;
+            white-space: nowrap;
+            overflow: scroll;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* 멀티라인 적용 후 */
+        .notice a .multi {
+            width: 200px;
+            border: 1px solid;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="notice">
+        <li><a href="#">
+                <h3 class="h3">시간 배분을 위하여 현명한 판단을 바랍니다. </h3>
+            </a></li>
+        <li><a href="#">
+                <h3>욕심껏 내용을 채우는 것도 좋겠습니다. </h3>
+            </a></li>
+        <li><a href="#">
+                <h3 class="multi">결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수
+                    있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.</h3>
+            </a></li>
+    </ul>
+</body>
+
+</html>

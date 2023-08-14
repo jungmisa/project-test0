@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+    <style>
+        /* div를 이용한 그룹핑 */
+        div {
+            background-color: rgb(122, 122, 143);
+            color: white;
+        }
+
+        .header {
+            width: 300px;
+            border: 1px solid;
+            color: black;
+        }
+
+        .section {
+            width: 300px;
+            border: 1px solid;
+            color: black;
+        }
+
+        .footer {
+            width: 300px;
+            border: 1px solid;
+            color: black;
+        }
+
+        /* 아래는 스맨틱태그를 이용한 그룹핑 */
+        header {
+            width: 300px;
+            border: 1px solid;
+            color: black;
+        }
+
+        section {
+            width: 300px;
+            border: 1px solid;
+            color: black;
+        }
+
+        footer {
+            width: 300px;
+            border: 1px solid;
+            color: black;
+        }
+
+        a {
+            background-color: violet;
+        }
+
+        span {
+            background-color: green;
+        }
+    </style>
+</head>
+<!-- 컨텐츠를 이만큼 정하겠다는 의미.블럭 요소임. -->
+
+<body>
+    <div>의미없는 콘텐츠를 감쌀 때 쓰는 것. 감싸서 모양을 바꿈.</div>
+    <h1>블럭이지만 블럭포함 가능. div는 p가 가능함.</h1>
+    <div class="header">header</head>
+    </div>
+    <div class="section">section</div>
+    <div class="footer">footer</div>
+    <!-- semantic tag(시맨틱태그) -->
+    <!-- 구조를 만들 때 div를 씀. -->
+    <!-- 너비와 높이를 가질 수 있음. -->
+    <header>header</header>
+    <section><h2>세션</h2>section</section>
+    <footer>footer</footer>
+    <a href="">푸바오</a>
+    <div>푸바오</div>
+    <a href="">푸바오</a><span>푸바오</span>
+</body>
+
+</html>

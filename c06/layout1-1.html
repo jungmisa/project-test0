@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cf:aftr{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .fl {
+            float: left;
+        }
+        .wrap {
+            max-width: 500px;
+            margin: auto;
+            background-color: gray;
+        }
+
+        main {
+            background-color: blue;
+        }
+
+        /* 컨첸츠가 없으면 너비를 줘야함. 컨텐츠가 있으면 너비를 안줘도 됨. */
+        header {
+            background-color: red;
+        }
+
+        section {
+            width: 300px;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>header</header>
+        <main class="cf">
+            <nav class="f1">nav</nav>
+            <section class="fl">section</section>
+            <aside class="fl">aside</aside>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        div {
+            width: 600px;
+            height: 50px;
+            padding: 15px;
+            border: 10px solid transparent;
+        }
+
+        .round {
+            border-image: url(./img/border.png) 20;
+            /* 보더이미지가 20픽셀이 적용된 기준은 모서리 기준 */
+            /* 브라우저에게 테두리 조각을 만들기 위해 이미지를 슬라이스할 위치를 알려준다. */
+        }
+
+        .round {
+            border-image: linear-gradient(red, blue) 27%;
+        }
+
+        .repeat {
+            border-image: url(./img/border.png) 20 repeat;
+        }
+
+        /* repeat:반복 */
+        .stretch {
+            border-image: url(./img/border.png) 20 stretch;
+        }
+
+        .frame {
+            width: 600px;
+            height:300px;
+            background: red;
+            margin:150px auto;
+            /* 위아래 150px */
+            border-image: url(./img/0307-border-image/border.jpg) 45 fill / auto repeat;
+            /* fill을 쓰면 보더 안쪽의 공간이 채워짐. 안써도 괜찮음. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="round">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="repeat">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="stretch">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="frame">
+    </div>
+</body>
+
+</html>

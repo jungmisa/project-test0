@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피그마 float 테스트 다시 해보기2</title>
+    <style>
+        .wrap {
+            width: 1200px;
+            height: 111px;
+            background-color: grey;
+            margin: auto;
+            text-align: center;
+            line-height: 37px;
+            font-weight: bold;
+        }
+
+        .cf:after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+
+        header {
+            height: 37px;
+            background-color: pink;
+        }
+
+        .box1{width: 100px; height: 37px; background-color: yellowgreen;}
+        .box2{width:1000px; height: 37px; background-color: skyblue;}
+        .box3{width: 100px; height: 37px; background-color: lightgreen;}
+
+        .fl{float: left;}
+        .fr{float: right;}
+
+        .footer{width: 1200px; height: 37px; background-color: rgb(84, 126, 163);}
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>header</header>
+        <main class="cf">
+            <nav class="fl box1">sidebar</nav>
+            <section class="fl box2">contents</section>
+            <aside class="fr box3">sidebar_ad</aside>
+        </main>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+
+</html>

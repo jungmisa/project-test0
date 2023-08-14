@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            background: rgba(255, 255, 0, .5);
+            border: 10px solid rgba(0, 0, 0, .5);
+            width: 600px;
+            height: 100px;
+            padding: 30px;
+            margin-bottom: 10px;
+            /* 박스 너비:박스크기 박스 사이즈+보더사이즈+패딩값 */
+            /* 600+10+10+30+30=680 */
+            /* 박스높이: 박스크기+보더사이즈+패딩값 */
+            /* 100+10+10+30+30=180 */
+
+        }
+
+        .sizing {
+            box-sizing: content-box;
+            /* 보더값까지 계산 */
+            box-sizing: border-box;
+            /* 보더의 값은 적용되지않음. 바깥여백은 포함하지않음. */
+        }
+
+        ul.sizing_list {
+            width: 500px;
+            background: rgba(0, 0, 0, .5);
+            margin: auto;
+            margin-top: 20px;
+            /* 순서에 따라 마진이 다시 재적용되기 때문에 순서를 신경쓸 것. */
+        }
+
+        ul.sizing_list li {
+            list-style: none;
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            float: left;
+        }
+        ul.sizing_list li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        ul.sizing_list li:nth-child(odd){background: rgba(219, 95, 95, .5);}
+        /* ul.sizing_list li:nth-child(even): 짝수를 선택 */
+        /* ul.sizing_list li:nth-child(odd): 홀수를 선택 */
+    </style>
+</head>
+
+<body>
+    <p>It's impossible not only starting good but also keeping it firm!!</p>
+    <p class="sizing">It's impossible not only starting good but also keeping it firm!!</p>
+    <ul class="sizing_list">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Custommer</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+</body>
+
+</html>

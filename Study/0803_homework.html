@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0803 과제</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 20px;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+        }
+
+        /* 웹폰트 적용 */
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 700,
+                'GRAD' 200,
+                'opsz' 48
+        }
+
+        /* Static icon font: 고정 사이즈가 아니라 가변적으로 사이즈가 변할 수 있는 아이콘 태그를 다운받음. */
+        .material-symbols-outlined {
+            background-color: yellowgreen;
+            font-size: 50px;
+            margin-bottom: 20px; user-select: none;
+        }
+
+        p {
+            text-align: justify; 
+        }
+
+        /* user select의 사용법 */
+        /* 속성은 사용자가 텍스트를 선택할 수 있는지 여부를 지정하는 데 사용 */
+        /* none: 텍스트 선택을 완전히 비활성화합니다. 사용자가 해당 텍스트를 드래그하거나 선택할 수 없습니다. */
+
+        .shadow {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+            text-shadow: 3px 1px 3px rgba(255, 86, 86, 0.6);
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>영상과 인쇄의 공존</h1>
+        <span class="material-symbols-outlined">
+            face
+        </span>
+        <p>
+            영상의 발달로 인해 인쇄는 곧 사라질 것처럼 생각했지만 예상을 뒤집고 인쇄물들은 점점 고급화를 향해 달리고 있다. e-book의 출현과 함께 서점에서 책을 사모으는 취미는 여전하고 FACEBOOK의 도전에도 불구하고 많은 사람들은 책장을 손으로 넘기고 있다. 좋은 인쇄물을 갖는 것은 큰 즐거움이며 스마트폰을 두드리는 손가락에 의해 흥미로운 책장도 계속 넘어간다.<span class="shadow">요고추가</span>
+        </p>
+    </div>
+</body>
+
+</html>

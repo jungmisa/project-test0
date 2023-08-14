@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-wrap, word-break 텍스트 줄바꿈</title>
+    <style>
+        ul{width: 200px;}
+        /* 영문 줄바꿈 */
+        .eng li{word-wrap: break-word;}
+        /* 모든 언어의 줄바꿈 */
+        /* 워드브레이크를 주로 사용함 */
+        .wrapping li{word-break: break-all;}
+    </style>
+</head>
+<body>
+    <ul class="eng">
+        <li>
+            <p>이름 : 홍길동</p>
+        </li>
+        <li>
+            <p>이메일 : hongkildong20180101koreapublishing20181231@hanmail.net</p>
+            <p>이페이지는영어로부터커뮤니티에의하여번역되었습니다.MDNWebDocs에서한국커뮤니티에가입하여자세히알아보세요</p>
+        </li>
+    </ul>
+    <ul class="wrapping">
+        <li>
+            <p>이름 : 홍길동</p>
+        </li>
+        <li>
+            <p>이메일 : hongkildong20180101koreapublishing20181231@hanmail.net</p>
+            <p>이페이지는영어로부터커뮤니티에의하여번역되었습니다.MDNWebDocs에서한국커뮤니티에가입하여자세히알아보세요</p>
+        </li>
+    </ul>
+</body>
+</html>

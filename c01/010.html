@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box의 5번째 자식요소 */
+        /* nth child:몇 번째 자식인 지 선택하는 것 */
+        p:nth-child(5) {
+            color: red;
+        }
+
+        /* 하위요소 중에 다섯 번째 */
+        .box>p:nth-child(5) {
+            color: red;
+        }
+
+        /* p태그의 몇 번째 자식인지 선택하는 것 */
+        /* .box 자식 중 span의 첫 번째 */
+
+        .box>span:nth-of-type(1) {
+            background-color: black;
+            color: white;
+        }
+
+        /* box의 자식 네 번째 선택*/
+        .box>span:nth-child(4) {
+            color: pink;
+        }
+
+        /* box의 자식 중 P태그의 첫번째를 선택하여 배경색을 노랑으로 변경하시오 */
+        .box>p:nth-of-type(1) {
+            background-color: yellow;
+        }
+
+        /* box 자식 중 첫번째 p 요소에 마우스 호버시 인접한 span의 배경색을 변경하시오 */
+        /* 인접: + 형제요소 */
+        .box>p:nth-of-type(1):hover+span {
+            background-color: lightgreen;
+        }
+
+         /* box 자식 중 첫번째 p 요소에 마우스 호버시 인접한 span의 앞에 이모티콘이 뜨게 바꾸시오.*/
+        .box>p:nth-of-type(1):hover+span:before {
+            content: '😂';}
+
+    </style>
+</head>
+
+<body>
+    <!-- p+span+p+span+p -->
+    <div class="box">
+        <p>1. p태그1</p>
+        <span>2. span태그1</span>
+        <p>3. p태그2</p>
+        <span>4. span태그2</span>
+        <p>5. p태그3</p>
+    </div>
+</body>
+
+</html>

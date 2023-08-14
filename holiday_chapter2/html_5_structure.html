@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0805 html5문서(온라인 강의)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            border: 1px solid;
+            color: rgb(94, 94, 94);
+            padding-left: 10px;
+            padding-bottom: 5px;
+            margin: 20px;
+            width: 400px;
+        }
+
+        .minibaox {
+            padding: 30px;
+        }
+
+
+        hr {
+            width: 600px;
+        }
+
+        p {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>기본구조</h1>
+    <p>html(Hypertext Markup Language)는 태그(tag) 언어이다.</p>
+    <h1>시작태그/컨텐츠/종료태그</h1>
+    <h2>start tag / contents()element /end</h2>
+    <br>
+    <ul>
+        <li>시작과 끝이 없는 태그</li>
+        <ul>
+            <li>img, br, hr</li>
+        </ul>
+        <li>속성 이름값과 속성값(value)
+            <ul>
+                <li>
+                    <h1 title="header">hmtl5 structure</h1>
+                </li>
+                <li>img src</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <p>html5 문서 태그</p>
+    <ul>
+        <li>문서요약(hmtl, head, title, body)</li>
+        <li>문서정보(base, meta, link(css), style(css),script)</li>
+        <li>문서구조(img, br, hr)</li>
+    </ul>
+    <hr>
+
+    <div class="box1">
+        <h2>텍스트와 링크</h2>
+        <p>h1-h6: 제목으로 1부터 6까지</p>
+        <p>paragrapf:p태그</p>
+        <p>br:break 줄바꿈</p>
+        <p>hr(horizon rule): 수평 줄 삽입</p>
+    </div>
+
+    <div class="box2">
+        <h2>제목과 본문 태그의 종류</h2>
+        <p>div(divison): 영역분할</p>
+        <p>pre(performatted): 형식화된 텍스트 표시</p>
+        <p>특수문자:&nbsp(공백), &lt;(letter)(<),&gt;(greater)(>),&amp;(&)</p>
+    </div>
+    <hr>
+    <div class="box3">
+        <h2>글자모양 태그의 종류</h2>
+        <p><strong>b: (bold) 굵은 글자</strong></p>
+        <!-- 최근에는 strong과 em을 더 많이 사용한다. -->
+        <p>strong: 볼드체b</p>
+        <p><i>i(italic): 기울어진 글자</i></p>
+        <p>em(emphasized): 기울어진 글자</p>
+        <p>small:작은 글자</p>
+        <p>sub(subscrpit):아래첨자 a<sub>2</sub></p>
+        <p>sup(superscrpit):위첨자</p> a<sup>2</sup>
+        <p><ins>ins(insert): 밑줄글자</ins></p>
+        <p><del>del(delete): 취소선 글자</del></p>
+        <p><mark>mark(marked): 하이라이트된 글자</mark></p>
+    </div>
+    <hr>
+    <div class="box4">
+        <h2>하이퍼 링크</h2>
+        <!-- 클릭을 했을 때 다른 경로로 이동하거나 이미지나 동영상을 합법적으로 띄워줌. -->
+        <p>a: anchor(닻의 뜻, 연결을 의미)</p>
+        <p>href :hyper reference 파일의 경로 주소 등을 의미</p>
+        <p> a href=링크할 페이지나 파일의 경로 / 하이퍼링크 이름/a</p>
+        <p><a href="http://naver.com">네이버로 이동</a></p>
+        <div class="minibaox">
+            <ul>
+                <li>절대주소: 경로의 정확한 주소를 표현
+                    <ul>
+                        <li>http://~</li>
+                        <li>//경로 또는 /(root) 정확한 파일 위치를 표기</li>
+                    </ul>
+                </li>
+                <li>상대주소: html파일과의 상대적인 위치를 표현
+                    <ul>
+                        <li>./(현재 위치를 표현)</li>
+                        <li>../(현재 위치의 상위 경로를 표현) ../(두 단계 상위 경로를 표현)</li>
+                    </ul>
+                </li>
+                <li>이미지에 링크 설정</li>
+            </ul>
+            <p>하이퍼링크 새창에서 열기: target=_blank</p>
+        </div>
+    </div>

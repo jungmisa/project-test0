@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 태그 선택자</title>
+    <style>
+        p::first-letter{font-size: 150%;}
+        /* 첫번째 글자만 선택할 수 있음. (c,p,s,o등)*/
+        p:first-child{color: lightseagreen;}
+        p:last-child{color: blueviolet;}
+        p:nth-child(3){background-color: lightgray;}
+
+         /* 넣지못한 컨텐츠가 있을 때 가상에 넣을 수 있음. */
+        /* 가짜로 넣었기 때문에 드래그했을 때 블럭으로 안잡힘 */
+        /* 태그 안에 자식요소로 추가됨 */
+         /* 인라인요소 */
+        /* :이든 ::이든 상관없음. */
+        p::before{content: '👻';}
+        p::after{content: '추가'; font-size: 8px blueviolet; background-color: lightpink;}
+    
+       
+    </style>
+</head>
+<body>
+    <h1>: 가상 선택자</h1>
+    <!-- 마우스를 올렸을 때의 상태: hover등 -->
+     <div class="box">
+        <p>COMPANY</p>
+        <p>PRODUCT</p>
+        <p>SERVICE</p>
+        <p>COMMUNITY</p>
+    </div> 
+</body>
+</html>

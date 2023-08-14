@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagemap</title>
+</head>
+<body>
+    <h1>이미지맵을 이용한 하이퍼 링크 연결</h1>
+    <div><img src="./images/images/banner_map.gif" alt="" usemap="#bannerimg"></div>
+    <map name="#bannerimg">
+        <area shape="rect" coords="0,0,100,100" href="http://naver.com" alt="">
+        <area shape="rect" coords="100,100,200,200" href="http://google.com" alt="">
+        <area shape="rect" coords="100,0,200,0" href="http://misamisa.dothome.co.kr/" alt=">
+        <area shape="rect" coords="0,100,200,200" href="http://daum.net" alt="">
+    </map>
+    <p>ctrl shift c 요소보는 법</p>
+    <p>4분의 1분할 100정도로 보면 됨</p>
+    <p>가로세로가 교차하는 위치에 좌표가 결정됨.(가로 먼저 쓰고 세로 써야함)</p>
+    와이축은 상단으로 올라갈 수록 플러스 내려갈 수록 마이너스
+</body>
+</html>

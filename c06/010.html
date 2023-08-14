@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            /* right. bottom 안됨 */
+            left: 50%;
+            /* 박스축을 기준으로 50% 가게됨 */
+            /* 요소를 중심으로 오게 하는 방법 */
+            /* margin-left:-250px; */
+            transform: translateX(-250px);
+        }
+
+        .container2 {
+            background-color: blue;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: yellow;
+            opacity: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            /* 밑의 2,3,4번은 깔려있음... */
+            left: 50%;
+            /* calc(100%/2) */
+            /* margin-left: -25px; */
+            top: 50%;
+            /* margin-top: -25px; */
+            /* calc: 컴퓨터 계산기 */
+            transform: translate(calc(-50px / 2), (calc(-50px / 2)));
+            /* transform: translateX(calc(-50px /2), translateY(calc(-50px /2))); */
+            /* 숫자 띄어쓰기해서 써야함. */
+        }
+
+        .box5 {
+            width: 250px;
+            height: 250px;
+            background-color: grey;
+            position: absolute;
+            left: 70%;
+            top: 70%;
+            transform: translate(calc(-250px / 2), calc(-250px / 2));
+        }
+
+        .container3 {
+            width: 482px;
+            height: 482px;
+            background-color: aqua;
+            margin: auto;
+            position: relative;
+        }
+
+        .box7 {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* transform: translate(-30px, -30px); */
+            transform: translate(calc(-60px / 2), calc(-60px / 2));
+        }
+
+        .container4 {
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            margin: auto;
+            position: relative;
+        }
+
+        .box8 {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            position: absolute;
+            left: 5%;
+            top: calc(100% / 2);
+            transform: translateX(calc(50px / 2));
+        }
+
+        .box9 {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            position: absolute;
+            right: 10%;
+            top:calc(100% / 2);
+            transform: translateX(calc(50px / 2));
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+    <div class="container2">
+        <div class="box5">box5</div>
+    </div>
+    <div class="container3">
+        <div class="box7">box5</div>
+    </div>
+    <div class="container4">
+        <div class="box8">😀</div>
+        <div class="box9">😁</div>
+    </div>
+</body>
+
+</html>

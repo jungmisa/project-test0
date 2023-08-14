@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요문장 공백으로 감싸기</title>
+    <style>
+        .test1,.test2,.test3,.test4 {
+            margin: 10px;
+            width: 600px;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .test1 {
+            white-space: pre-line;
+            background-color: yellowgreen;
+            font-weight: bold;
+            font-size: 24px;
+            color: red;
+
+        }
+
+        .test2 {
+            white-space: pre-line;
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+
+        .test3 {
+            white-space: pre-line;
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+
+        .test4 {
+            white-space: pre-line;
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+        .test4>span{font-size: 20px;}
+    </style>
+</head>
+
+<body>
+
+    <p class="test1"> *초기화 태그: {margin: 0;padding: 0;}
+        작업하기 전에 항상 초기화 하고 사용할 것
+    </p>
+    <p class="test2">"nth-child" 선택자는 부모 요소 내의 모든 자식 요소들 중에서 순서에 따라
+        특정 위치의 요소를 선택하는 데 사용됩니다.
+        예를 들어, "nth-child(2)"는 부모 요소 내에서 두 번째 자식 요소를 선택하고,
+        "nth-child(3n)"은 3의 배수에 해당하는 모든 자식 요소들을 선택합니다.
+        "nth-child"는 요소의 태그 이름과 상관없이 순서에 따라 요소를 선택합니다.</p>
+    <p class="test3">구조와 모양은 분리해서 생각해야함. 구조는 html / 모양은 css
+        ctrl+g 태그 라인 찾기
+        이모지 단축키: 마침표 윈도우(자꾸 까먹음 레전드 까먹음…)
+    </p>
+    <p class="test4"><span>white-space(공백처리)</span>
+        
+        nowrap:줄바꿈을 하지않겠다.(텍스쳐요소가 다 삐져나옴...)
+        pre;:줄바꿈은 가능하지만 공백안에 텍스쳐를 다 채울 순 없음.
+        pre-line;: 줄바꿈 가능하고 공백 안에 텍스쳐 채우기 가능
+    </p>
+
+
+
+</body>
+
+</html>

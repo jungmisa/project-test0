@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0803 배경</title>
+</head>
+<style>
+    body{background: url(./img/bg_grid.gif);}
+    div{background: yellow; margin-bottom: 10px;}
+
+/* 배경과 글씨 전부 투명해야할 때 */
+    .light{opacity: 0.2;}
+
+    /* 배경은 투명하고 글씨는 선명해야할때 */
+    .medium{background-color: rgba(255, 255, 0, 0.2);}
+    .heavy{opacity: 0.9;}
+    
+</style>
+<body>
+    <h1>opacity</h1>
+    <div class="light">겨우 보이는 글</div>
+		<div class="medium">좀 더 잘 보이는 글</div>
+		<div class="heavy">쉽게 보이는 글</div>
+</body>
+</html>

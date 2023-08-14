@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url('img/img/bg_grid2.gif');
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        /* 관용색 */
+        .color1 {
+            background-color: magenta;
+        }
+
+        /* hex코드 */
+        .color2 {
+            background-color: #9999ff;
+        }
+
+        /* rgg컬러 */
+        .color3 {
+            background-color: rgb(163, 229, 77);
+        }
+
+        /* hsl값인데 왜 나는 적용 안되지 */
+        .color4 {
+            background: hsl(180, 22%, 52%);
+        }
+
+        /* 알파값을 갖는 채널 0.5면 불투평도가 50% */
+        .color5 {
+            background-color: rgba(180, 225, 225, 0.5);
+        }
+
+        /* .8: 불투명도 80% */
+        .color6 {
+            background: hsla(180%, 50%, 50%, .8);
+        }
+
+        .color7 {
+            background-color: #b6cb34;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- p태그를 감싸는 것보다 큰 요소가 있기 때문에 부모요소인 body를 선택한다. -->
+    <p class="color1">시험 일정은 다음과 같습니다.</p>
+    <p class="color2">필기시험 : 5월 10일~15일</p>
+    <p class="color3">필기 합격 발표 : 5월 30일</p>
+    <p class="color4">실기시험 : 6월 12일~17일</p>
+    <p class="color5">실기 합격 발표 : 7월 20일</p>
+    <p class="color6">행운을 빕니다.</p>
+    <p class="color7">패션후르츠가 안셔요</p>
+</body>
+
+</html>

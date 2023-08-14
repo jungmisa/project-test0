@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: rgba(255, 255, 101, 0.5);
+            width: 600px;
+            height: 100px;
+            padding: 50px;
+            /* top/bottom right/left */
+            padding: 50px 10px 50px;
+            /* 패딩은 박스값에 영향을 미친다 */
+            /* 항상 위에 있는 것부터 우선 적용됨 */
+            /* 박스 너비: 좌우로 50+50 700px */
+            /* 값을 하나만 썼을 때는 네 방향 전부 똑같은 값이 적용됨 */
+            /* padding: 50px 10px(값이 두 개면 대칭으로 적용됨(50-50),(10-10)) */
+            /* top/bottom right/left */
+            padding: 100px 10px 30px;
+            /* (두 번째 값(중간값)이 좌우로 들어감 첫 번째값과 마지막값은 위아래로 들어감.) */
+            /* top right bottom left */
+            padding: 50px 70px 100px 20px;
+            /* 위에서부터 시계방향으로 적용됨 */
+            /* auto padding은 오토가 없음 */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>BOX-padding</h3>
+    <p>철수가 영희에게 퍼블리셔란 무슨 일을 하는 직업이니? 하고 물었다.</p>
+    <p>그러자 영희는 철수에게 아~ 그건 다 함께 잘 살기 위해 인터넷 선장이 되는 일이야 라고 말했다.</p>
+</body>
+
+</html>

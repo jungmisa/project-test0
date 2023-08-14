@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0803</title>
+    <style>
+        .box {
+            margin: 10px;
+            border: 1px solid;
+        }
+
+        /* dispaly:none: 화면에서 숨기기 */
+        /* 공간도 빠짐. 화면에서 존재가 사라짐. */
+        .hdd {
+            color: red;
+            display: none;
+        }
+
+        /* 알파값을 이용해서 불투명도로 태그를 숨김 */
+        /* 보이지는 않지만 존재가 남아있음. */
+        .hdd2 
+            /* color: rgba(255, 0, 0, 0); */
+             /* visibility: hidden; */
+            {visibility: visible}
+
+        .hdd2{opacity: 0; color: red; color: transparent;}
+             
+
+        /* 커서를 대면 hdd의 빨간 글씨가 보이게 하시오 */
+        .hdd {
+            color: red;
+            display: block;
+        }
+
+        /* 바디의 자식 중에 네 번째 자식을 찾아서 */
+        /* 커서를 대면 글이 보임 */
+        .box:nth-child(4):hover .hdd2 {
+            color: rgba(255, 0, 0, 1);
+
+            .box:nth-child(3):hover .hdd {
+                display: inline-block;
+            }
+        }
+
+        /* 공간은 남겨놓고 자리는 사라짐. */
+        
+
+        /* .box:nth-child(2):hover 두 번째 자식요소 box에 마우스 오버시 */
+        /* hover~.box .hdd 다음에 오는 형제 요소 중 .box 하위의 .hdd를 선택함 */
+        .box:nth-child(2):hover~.box .hdd {
+            display: inline-block;
+        }
+
+        /* 테두리가 움직이면 디스플레이 가만히 있으면 색상 */
+    </style>
+</head>
+
+<body>
+    <h1>화면에서 숨기기</h1>
+    <div class="box">
+        <p><strong>이름 :</strong>홍길동</p>
+        <p><strong>연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+    <p>
+        color:rgba(255,255,255,0)- 상속됨 <br>
+        visibility opacity - 상속안됨 <br>
+        
+    </p>
+
+    <div class="box">
+        <p><strong class="hdd">이름 :</strong>홍길동</p>
+        <p><strong class="hdd">연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+    <div class="box">
+        <p><strong class="hdd2">이름 :</strong>홍길동</p>
+        <p><strong class="hdd2">연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+</body>
+
+</html>

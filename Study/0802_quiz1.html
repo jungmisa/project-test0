@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0802퀴즈1번</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        /* 마진은 여백과 크기가 있어야함 */
+        .wrap{border: 1px solid; width:500px; padding: 10px; margin: 20px auto;}
+        h1{height: 80px; list-style: 80px;}
+        ul{list-style: none; margin-bottom: 32px;}
+
+        /*  "inline-block"은 인라인 요소와 같이 수평으로 표시되지만, 내용물의 일부를 차지하는 블록 요소의 특성을 가지고 있습니다. 따라서 "인라인 블락요소(inline-block)"는 내용물의 일부분을 차지하면서 수평으로 배치되는 요소를 의미합니다. 이 속성은 일반적으로 div, span 등의 요소를 가운데 정렬할 때 많이 사용됩니다. */
+
+        ul li *{display: inline-block; margin-left:40px;}
+        ul li{height: 40px; line-height: 40px;}
+        ul li h3{color: brown;letter-spacing: 0.5px;}
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>최신 웹 디자인 트렌드</h1>
+        <ul>
+            <li>
+                <h3>반응형 웹 디자인</h3>
+                <span>-다양한 화면 크기에 최적화하다</span>
+            </li>
+            <li>
+                <h3>플랫 디자인</h3>
+                <span>-입체에서 평면으로</span>
+            </li>
+            <li>
+                <h3>풀스크린 배경</h3>
+                <span>-콘텐츠에 집중</span>
+            </li>
+            <li>
+                <h3>원 페이지 사이트</h3>
+                <span>-한 페이지에 모든 내용을 담다</span>
+            </li>
+            <li>
+                <h3>패럴랙스 스크롤링</h3>
+                <span>-동적인 효과로 강한 인상을!</span>
+            </li>
+            <li>
+                <h3>웹 폰트</h3>
+                <span>-웹 타이포그래피를 받쳐주는 기술</span>
+            </li>
+         </ul>
+    </div>
+</body>
+
+</html>

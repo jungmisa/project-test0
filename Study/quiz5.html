@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0731 과제 문제풀이2</title>
+    <style>
+        *{padding: 0; margin: 0; font-family: "맑은 고딕". 돋움, arial;}
+        body{margin: 50px;}
+        a{text-decoration:none; font-size: 12px; color: grey;}
+        a:link
+        a:visited{color: grey;}
+        a:hover,
+        a:active{color: blue;}
+
+        div{width: 150px; margin-bottom: 50px;}
+        #categorybox{border: 5px solid lightseagreen;}
+        #bbsbox{border: 5px solid deeppink}
+        #categorybox>h2{border-bottom: 1px solid grey;}
+
+    </style>
+
+<!-- quiz5 css -->
+<!-- 속성선택자 -->
+    <style>
+        ul{list-style: none;}
+        /* 닷 없앨때 */
+        #bbsbox a{color: white;}
+        a[title="자유게시판"] {background-color: red;}
+        a[title~="장터"]{background: lightskyblue;}
+        a[title^="나"]{background-color: lightseagreen;}
+        a[title*=후]{background-color: lightgreen;}
+    </style>
+</head>
+<body>
+    <div id="categorybox">
+        <h2><img src="./Untitled_2.png" alt="title" width="54px"></h2>
+        <!-- 타이틀역할을 하기때문에 h2로 -->
+        <ul>
+            <li><a href="#">밥/죽/면</a></li>
+            <li><a href="#">매일 반찬</a></li>
+            <li><a href="#">국/찌게/전골</a></li>
+            <li><a href="#">가족/초대요리</a></li>
+            <li><a href="#">소스/양념장</a></li>
+            <li><a href="#">간식/음료</a></li>
+            <li><a href="#">기타</a></li>
+        </ul>
+    </div>
+
+    <div id="bbsbox">
+        <h2><img src="./Untitled.png" alt="title" width="54px"></h2>
+        <ul>
+            <li><a href="#" title="자유게시판">자유 게시판</a></li>
+            <li><a href="#" title="회원 장터">회원 장터</a></li>
+            <li><a href="#" title="나만의 레시피">나만의 레시피</a></li>
+            <li><a href="#" title="불후의 레시피">불후의 레시피</a></li>
+        </ul>
+    </div>
+</body>
+</html>

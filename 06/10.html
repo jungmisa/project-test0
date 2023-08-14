@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label</title>
+</head>
+
+<body>
+    <h1>레이블요소</h1>
+    <form action="#" method="post">
+        <table>
+            <!-- table>caption+colgroup+tbody -->
+            <caption>회원가입양식</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <label for="id">아이디</label>
+                        <!--input에 아이디를 입력하세요 -->
+                    </th>
+                    <td>
+                        <input type="text" id="id" title="아이디입력" placeholder="아이디를 입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="id">비밀번호</label>
+                    <td>
+                        <input type="password" id="pw" title="비밀번호" placeholder="비밀번호를 입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="id">이메일</label>
+                    <td>
+                        <input type="email" id="@email" title="이메일 입력" placeholder="이메일 주소를 입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="id">비밀번호재입력</label>
+                    <td>
+                        <input type="password" id="pw_r" title="비밀번호 재입력" placeholder="비밀번호를 재입력하세요">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="phone">전화번호</label>
+                    <td>
+                        <select name="hp" id="hp">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                        </select>
+                        <input type="password" title="휴대폰">
+                        <input type="text" title="휴대폰번호입력">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="취소">
+        </div>
+        <div>
+            <label for="yes">예</label>
+            <input type="radio" id="yes" name="receive" checked>
+            <label for="no">아니오</labelcc>
+                <input type="radio" id="no" name="receive">
+                <!-- radio는 둘 중 하나만 선택해야할 때 사용함 -->
+        </div>
+        <div>
+            <label>운동<input type="checkbox" name="hobby1"></label>
+            <label>영화감상<input type="checkbox" name="hobby2"></label>
+            <label>독서<input type="checkbox" name="hobby3"></label>
+            <!-- checkbox: 중복버튼을 가능하게 해줌. name의 이름은 바꿔줘야함. -->
+        </div>
+    </form>
+</body>
+
+</html>
